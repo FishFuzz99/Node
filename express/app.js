@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.get('/hello.txt', function(req, res){
+app.get('/hello.txt', function(req, res){//only works at ~/hello.txt url
 	res.send('Hello Express');
 });
 
