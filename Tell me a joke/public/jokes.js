@@ -12,17 +12,16 @@
 //	$('#jokes-target').text(newJoke);
 //}
 
-$('#joke').click(funtion() {
-	$.ajax({
-		type: "POST",
-		url: "http://tambal.azurewebsites.net/joke/random",
-		success: function(data) {
-			//console.log(data);
-			//console.log(data.joke);
-			$('.jokes').text(JSON.stringify(data));
-			//appendNewJoke(data);
-			//$('$new-tweet').val('');
-		},
-		dataType: 'jsonp',
+$('#joke').click(function() {
+	$.get('/getajoke', function(data) {
+		//$('.jokes-target').text(data)
+		//var jsonObj = JSON.parse(data);
+		var obj = data["body"];
+		if (obj.hasOwnProperty('joke'))
+		{
+			$('#jokes-target').text(obj.joke);
+		}
 	});
 });
+//https://github.com/KiaFathi/tambalAPI.git
+

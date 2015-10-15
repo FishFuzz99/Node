@@ -17,10 +17,14 @@ body {
 	margin: 0;
 }
 
-.joke-container {
+#jokes-target {
 	margin: 20px auto;
 	width:80%;
-	border-radius: 1px solid gray;
+	padding: 10px;
+	border-radius: 2px solid gray;
+	overflow: hidden;
+	background-color:#abc123;
+	float:right;
 	overflow: hidden;
 }
 
@@ -34,6 +38,8 @@ body {
 	padding: 7px 14px;
 	border-radius: 5px;
 	cursor: pointer;
+	margin: 50px auto;
+	margin-right: 75px;
 }
 
 .btn-joke:hover {
