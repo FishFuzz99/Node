@@ -19,18 +19,24 @@ body {
 
 #jokes-target {
 	margin: 20px auto;
+	margin-left: 50px;
 	width:80%;
 	padding: 10px;
 	border-radius: 2px solid gray;
+	border-radius: 5px;
 	overflow: hidden;
-	background-color:#abc123;
-	float:right;
+	background-color:#B2C4E6;
+	float:left;
 	overflow: hidden;
+}
+
+p.hidden{
+	display: none;
 }
 
 .btn-joke {
 	margin-top:10px;
-	background-color:#234234;
+	background-color:#1665ca;
 	color: #fafafa;
 	font-size: 16px;
 	float:right;
@@ -43,10 +49,10 @@ body {
 }
 
 .btn-joke:hover {
-	background-color: #132655;
+	background-color: #2d5cb4;
 
 }
 
 .btn-joke:active {
-	background-color: #123123;
+	background-color: #004fe0;
 }
